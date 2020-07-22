@@ -50,9 +50,34 @@ void main (){
 // print(list1.reversed.toList());//得到真数组[c, b, a]
 // print(list1);//原数组没变,还是[a, b, c]
 
-var list=new List();
-list.add('111');
-list.add('222');
-print(list);//['111','222']
+// var list=new List();
+// list.add('111');
+// list.add('222');
+// print(list);//['111','222']
+
+// list.addAll(['333']);
+// print(list);//['111','222','333']
+
+// list.insert(0, "444");
+// print(list);//['444', '111', '222', '333']
+
+// list.insertAll(0, ['a','b']);
+// print(list);//['a','b','444', '111', '222', '333']
+
+// List<int> list2=[1,2,3];
+// Iterable<int> list1=list2.followedBy([6,7]);//Iterable是迭代器,数组的方法它都有
+// print(list1);//(1, 2, 3, 6, 7)
+// // print(list1.toList());//[1, 2, 3, 6, 7]
+// print(list1.toList(growable:false));//[1, 2, 3, 6, 7],growable:false代表生成的List固定,不可再添加和修改
+// // list1.add(6);//报错,不能再增加
+// // list1[0]=23;//报错,
+// print(list1);//原数组不变(1, 2, 3, 6, 7)
+
+List<String> list3=['a','b','c'];
+
+list3.remove('a');
+print(list3);//[b, c]
+list3.removeAt(0);
+print(list3);//['c']
 
 }
