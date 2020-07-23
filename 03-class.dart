@@ -29,13 +29,13 @@
 //   }
 // }
 
-// void main (){
-//   var class03=new Class03(4, "d");
-//   var class04=new Class03.fun1(5);
-//   var class05=new Class03.fun2('d');
-//   print(class04.a);//5
-//   print(class05.b);//'d'
-// }
+void main (){
+  var class03=new Class03(4, "d");
+  var class04=new Class03.fun1(5);
+  var class05=new Class03.fun2('d');
+  print(class04.a);//5
+  print(class05.b);//'d'
+}
 
 
 class Class06 {
