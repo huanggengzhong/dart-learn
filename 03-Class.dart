@@ -38,19 +38,9 @@
 // }
 
 
-class Class06 {
-  int a;
-  static Class06 instance;//这里用static关键字创建一个单例
-  factory Class06(int a){//这里的构造函数用factory修饰，使用new时，不再是创建一个全新的实例了，而是通过函数体内return获取到实例
-    if(instance==null){
-      instance=new Class06.fun1(a);
-    }
-    return instance;
-  }
-  Class06.fun1(this.a);//这里是实例化当前对象的构造方法
-}
+
+
 
 void main (){
-var class06=new Class06(22);
-print(class06.a);//22
+
 }
