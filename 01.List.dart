@@ -55,6 +55,32 @@ void main() {
 // list.add('222');
 // print(list);//['111','222']
 
+<<<<<<< HEAD
+// list.addAll(['333']);
+// print(list);//['111','222','333']
+
+// list.insert(0, "444");
+// print(list);//['444', '111', '222', '333']
+
+// list.insertAll(0, ['a','b']);
+// print(list);//['a','b','444', '111', '222', '333']
+
+// List<int> list2=[1,2,3];
+// Iterable<int> list1=list2.followedBy([6,7]);//Iterable是迭代器,数组的方法它都有
+// print(list1);//(1, 2, 3, 6, 7)
+// // print(list1.toList());//[1, 2, 3, 6, 7]
+// print(list1.toList(growable:false));//[1, 2, 3, 6, 7],growable:false代表生成的List固定,不可再添加和修改
+// // list1.add(6);//报错,不能再增加
+// // list1[0]=23;//报错,
+// print(list1);//原数组不变(1, 2, 3, 6, 7)
+
+List<String> list3=['a','b','c'];
+
+list3.remove('a');
+print(list3);//[b, c]
+list3.removeAt(0);
+print(list3);//['c']
+=======
   List<String> list3 = ['a', 'b', 'c'];
 
 // list3.remove('a');
@@ -344,6 +370,7 @@ List<String> list37 = List();
 /**
  * join("-")   用指定的字符将List中每个元素都连接起来，返回一个字符串
  */
+>>>>>>> ed27e7c1d4b368575966cc764a0aaa6686108676
 
     List<int> list50 = [3, 4, 1, 2, 5];
     String result24 = list50.join("-");//用指定的字符将每个元素都连接起来，返回一个字符串
