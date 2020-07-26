@@ -56,24 +56,62 @@
 // }
 
 
-class Class08{
-  int hands;
-  int feet;
+// class Class08{
+//   int hands;
+//   int feet;
   
-     num get persons{
-        print("get方法");
-        return this.hands;
-      } 
+//      num get persons{
+//         print("get方法");
+//         return this.hands;
+//       } 
 
-      set persons(num n){
-        print("set方法");
-          this.hands=n*2;
-          this.feet=n*2;
-      }
+//       set persons(num n){
+//         print("set方法");
+//           this.hands=n*2;
+//           this.feet=n*2;
+//       }
+// }
+// void main(){
+//     var class08 = new Class08();
+//     class08.persons = 3;//这里就调用了set方法，进而对hands feet赋值了
+//     print(class08.persons);//6
+
+// }
+
+// //定义抽象类,使用abstract修饰
+
+// abstract class Class09{
+//   void fun01();//这里是定义抽象方法
+// }
+// //继承抽象类
+// class Class10 extends Class09 {
+//   @override
+//   void fun01(){//这里是实现抽象方法
+//     print("定义自己的抽象方法");
+//   }
+// }
+
+// void main(){
+//   var class10=new Class10();
+//   class10.fun01();//打印:定义自己的抽象方法
+// }
+
+class Class11{
+  static int a=3;//静态变量
+  int b=4;//实例变量
+
+  static void fun01(int c){//静态方法
+    print(c);
+  }
+  void fun02(){//实例方法
+    print(this.b);
+  }
 }
-void main(){
-    var class08 = new Class08();
-    class08.persons = 3;//这里就调用了set方法，进而对hands feet赋值了
-    print(class08.persons);//6
 
+void main (){
+  var class11=new Class11();
+  print(class11.b);//4,实例变量
+  print(Class11.a);//3,静态变量
+  class11.fun02();//4 ,实例函数调用
+  Class11.fun01(44);//44 静态函数调用
 }
