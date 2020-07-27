@@ -37,7 +37,6 @@
 //   print(class05.b);//'d'
 // }
 
-
 // class Class06 {
 //   int a;
 //   static Class06 instance;//这里用static关键字创建一个单例
@@ -55,15 +54,14 @@
 // print(class06.a);//22
 // }
 
-
 // class Class08{
 //   int hands;
 //   int feet;
-  
+
 //      num get persons{
 //         print("get方法");
 //         return this.hands;
-//       } 
+//       }
 
 //       set persons(num n){
 //         print("set方法");
@@ -96,22 +94,50 @@
 //   class10.fun01();//打印:定义自己的抽象方法
 // }
 
-class Class11{
-  static int a=3;//静态变量
-  int b=4;//实例变量
+// class Class11{
+//   static int a=3;//静态变量
+//   int b=4;//实例变量
 
-  static void fun01(int c){//静态方法
-    print(c);
-  }
-  void fun02(){//实例方法
-    print(this.b);
-  }
-}
+//   static void fun01(int c){//静态方法
+//     print(c);
+//   }
+//   void fun02(){//实例方法
+//     print(this.b);
+//   }
+// }
 
-void main (){
-  var class11=new Class11();
-  print(class11.b);//4,实例变量
-  print(Class11.a);//3,静态变量
-  class11.fun02();//4 ,实例函数调用
-  Class11.fun01(44);//44 静态函数调用
+// void main (){
+//   var class11=new Class11();
+//   print(class11.b);//4,实例变量
+//   print(Class11.a);//3,静态变量
+//   class11.fun02();//4 ,实例函数调用
+//   Class11.fun01(44);//44 静态函数调用
+// }
+
+//定义枚举
+enum Week { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
+void main() {
+  List<Week> list = Week.values; //values属性获取所有枚举值
+  print(
+      list); //[Week.Monday, Week.Tuesday, Week.Wednesday, Week.Thursday, Week.Friday, Week.Saturday, Week.Sunday]
+
+  list.forEach((e) {
+    print(e); //依次如下打印
+    //     Week.Monday
+    //     Week.Tuesday
+    //     Week.Wednesday
+    //     Week.Thursday
+    //     Week.Friday
+    //     Week.Saturday
+    //     Week.Sunday
+    print(e.index);//依次如下打印
+    //     0
+    //     1
+    //     2
+    //     3
+    //     4
+    //     5
+    //     6
+  });
+
 }
