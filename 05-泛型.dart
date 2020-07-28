@@ -11,7 +11,7 @@
 // void main (){
 //   print(getDetail("aa"));//aa
 //   print(getDetail2(22));//22
-}
+// }
 
 // 使用泛型
 // 好处:可以复用,减少冗余
