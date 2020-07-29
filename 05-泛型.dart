@@ -20,8 +20,8 @@ T getData<T> (T value){//3个T依次表示:返回类型,运行时类型,参数�
   return value;
 }
 
-void main (){
-  // 调用时直接在方法名后写上类型即可
-  print(getData<String>("aa"));//aa
-  print(getData<int>(22));//22
-}
+// void main (){
+//   // 调用时直接在方法名后写上类型即可
+//   print(getData<String>("aa"));//aa
+//   print(getData<int>(22));//22
+// }
